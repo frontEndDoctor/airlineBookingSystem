@@ -1,0 +1,374 @@
+/* styes for the background of the landing page */
+.homePage{
+    background-image: url(./plane2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity:1;
+    margin:10px 5px ;
+    }
+
+/* Styling the entire navbar in Nav.js which contains the logo and the nav items */
+.appLogo {
+    margin-right: auto; /* Align logo to the left */
+    border-radius: 50px;
+    width: 80px;
+    height: auto;
+     display: block;
+     margin-left: 20px;
+     margin-top: 5px;
+  }
+  
+.navItem{
+    padding: 10px;
+    margin-right: 20px;
+    /* background-color: white;
+    border-radius: 10px; */
+    display: inline-flex;
+    justify-items: end;
+    margin-left: 20px;
+    list-style-type: none;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    color: blue;
+}
+a:active{
+   color:red; 
+}
+.navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* styling the navbar ends here */
+
+
+  /* styling h1 and the getStared button in home.js */
+  
+ .welCome{
+    margin-top: 8em;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+    
+ }
+ .getStarted{
+    margin-top:1em;
+    padding:10px;
+    color:white;
+    background-color: #004aad;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    width:auto;
+    height:auto;
+ } 
+
+/* styling the booking form */
+
+/* blockquote{
+    color:white;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 150px;
+    margin: 30px 50px auto 30px;
+    text-align: left;
+    width: 40%;
+    height: 40%;
+    text-align: left;
+    
+    
+} */
+.bookingForm1{
+    background-color: #004aad;
+    opacity: 0.9;
+    display: flex;
+      
+}
+.swLogo{
+    width: 500px;
+    margin: 20px;
+    padding: 20px;
+    transition: height 0.3s ease-in-out; 
+}
+
+.bookingForm2{ 
+    width:500px ; 
+    margin:30px ; 
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+
+ }
+ 
+  .formInfo{
+    display:grid;
+    gap: 5px;  
+     
+ } 
+ .inputHolder {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+  }
+  .inputItem{
+    flex: 2;
+  width: 100%; 
+  margin-left: 10px;
+  margin-right:10px;
+  border-radius: 4px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  }
+ .bookFlight {
+     width: 50%; 
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  .inputLabel{
+    text-align: left;
+    margin-right: 3px;
+  }
+  h5{
+    font-size:large ;
+    font-weight: bold;
+}
+h3{
+
+    font-size: x-large;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+}
+hr {
+    border: none;
+    border-top: 2px solid black;
+    margin: 20px 0;
+  }
+  
+  .bookFlight{
+    display: block;
+    margin: 10px;
+    align-self: center;
+    font-weight: bold; 
+    font-size: large;
+    width: inherit;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  }
+   
+/* styling the payment page */
+.payment{
+    
+    background-image: url(../src/cloud.jpg);
+    display: flex;
+    
+
+}
+.formPay{
+    width:50%; 
+    margin:50px ; 
+    padding:20px;
+    top:30px
+   
+}
+pay1{
+    font-size: x-large;
+    margin-top: 20px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+}
+.pay{
+    width: 50%;
+    height:10%;
+    margin: 50px;
+    padding: 50px;
+}
+.payFlight{
+    display: block;
+    margin: 10px;
+    font-weight: bold; 
+    font-size: large;
+    width: 25%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+lastItem{
+    width: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* setting the queries for the mobile view */
+ @media  (max-width: 768px) {
+    .homePage{
+        background-image: url(./plane.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        overflow-y: hidden;
+        margin: 20px;
+    }
+    .getStarted{
+    margin-bottom:5em;
+    padding:10px;
+    color:white;
+    background-color: #004aad;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    }
+    .navbarContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+      .welCome{
+        
+        margin-top:20em;
+        padding:10px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        color: red;
+        
+     } 
+     .appLogo {
+        margin-right: auto; /* Align logo to the left */
+        border-radius: 50px;
+        width: 50px;
+        height: auto;
+         display: block;
+         margin-left: 20px;
+         margin-top: 5px;
+      } 
+
+    a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    color: blue;
+}
+a:active{
+   color:red; 
+}
+.bookingForm2{ 
+    width:auto; 
+    height: auto;
+    margin: 20px; 
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    
+
+ }
+ /* styling the payment page */
+.payment{
+    
+    /* background-image: url(../src/cloud.jpg); */
+    display: flex;
+    
+
+}
+.formPay{
+    width:80% ; 
+    margin:30px; 
+    padding: 10px;
+
+}
+
+.pay{
+    visibility: hidden;
+}
+.payFlight{
+    display: block;
+    margin: 10px;
+    font-weight: bold; 
+    font-size: large;
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+.lastItem{
+    width: 50px;
+}
+.formInfo{
+    top: 30px;
+    display:grid;
+    gap: 1px;
+    margin: 10px; 
+    padding:2px; 
+     
+ } 
+
+ .inputHolder {
+    display: flex;
+    align-items: center;
+  }
+  .inputItem{
+    flex: 2;
+  width: auto;
+  margin:5px;
+  padding:10px; 
+  border-radius: 4px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  }
+  .pay1{
+    font-size: 30px;
+    margin-top: 20px;
+    padding: 5px;
+    font-family:'Times New Roman', Times, serif;
+    font-style: bold;
+    text-align: center;
+}
+.inputLabel{
+    text-align: left;
+    margin-right:1px;
+    text-wrap: nowrap;
+  }
+ 
+    
+    
+}
+
+
+
+
+
+
+  
