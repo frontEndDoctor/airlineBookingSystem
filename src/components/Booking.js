@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "../styles.css"
 import Logo from "../app_logo.png";
-import Payment from "./Payment";
+//import Payment from "./Payment";
 import { Dropdown, DropdownButton } from 'react-bootstrap';;
 
 
