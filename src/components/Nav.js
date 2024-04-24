@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../app_logo.png";
 import "../styles.css";
-import { Navbar,NavItem,NavLink} from 'react-bootstrap';
+import { Navbar,NavItem} from 'react-bootstrap';
 
 
 const Nav =()=> {
