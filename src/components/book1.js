@@ -5,7 +5,7 @@ import Logo from "../app_logo.png";
 import { Dropdown, DropdownButton } from 'react-bootstrap';;
 
 
-const book1 =()=>{
+const Book1 =()=>{
     const [formData, setFormData] = useState();
     //To handle the event that occurs when each of the stated variable above is assigned a value
       const handleChange = (e) => {
@@ -47,8 +47,8 @@ const book1 =()=>{
                             <input  className='inputItem' type='email' placeholder='Enter your email address' required/>
                           </span>
                     </form>
-                    <button>Next</button>
+                    <button className="getStarted"> <a href='/book2' >Next</a></button> 
             </div>
     )
 }
-export default book1;
+export default Book1;

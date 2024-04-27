@@ -61,7 +61,8 @@ const book3 =()=>{
 
                     </span>
                 </form>
-                <button type='submit'>Next</button>
+                <button className="getStarted"> <a href='/book2' >Previous</a></button> 
+                <button type='submit'><a href='/Details'></a>Submit</button>
 
     
         </div>

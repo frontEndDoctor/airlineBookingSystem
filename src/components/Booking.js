@@ -3,9 +3,9 @@ import "../styles.css"
 import Logo from "../app_logo.png";
 //import Payment from "./Payment";
 // import { Dropdown, DropdownButton } from 'react-bootstrap';;
-// import book1 from './book1';
-// import book2 from './book2';
-// import book3 from './book3';
+import Book1 from './book1';
+import Book2 from './book2';
+import Book3 from './book3';
 
 
 
@@ -20,11 +20,11 @@ const Booking=()=>{
   const showPage=()=>{
     switch (currentPage) {
       case 1:
-        return < book1 nextPage ={nextPage}/>
+        return < Book1 nextPage ={Book2}/>
       case 2:
-        return < book2 nextPage ={nextPage}/>
+        return < Book2 nextPage ={nextPage}/>
     case 3:
-          return < book3/>
+          return < Book3/>
 
       default:
         break;
@@ -32,9 +32,10 @@ const Booking=()=>{
   }
   return(
     <div className="">
-      <img src={Logo} alt='logo' className='swLogo'/>
+      {/* <img src={Logo} alt='logo' className='swLogo'/> */}
       <h1> BOOK YOUR FLIGHT</h1>
       {showPage()}
+      {/* <button className="getStarted"> <a href='/booking' >Get Started</a></button>  */}
 
     </div>
   )

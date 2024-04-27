@@ -5,7 +5,7 @@ import Logo from "../app_logo.png";
 import { Dropdown, DropdownButton } from 'react-bootstrap';;
 
 
-const book2 =()=>{
+const Book2 =()=>{
      // firstly, declare the necessary variables for entering travel details. Don't forget to set them as empty i.e ' '
      const [formData, setFormData] = useState({
         departureCity: '',
@@ -99,7 +99,10 @@ const book2 =()=>{
                       />
                     </span>
                 </form>
-                <button>Next</button>
+                <span>
+                <button className="getStarted"> <a href='/book1' >Previous</a></button>   
+                <button className="getStarted"> <a href='/book3' >Next</a></button> 
+                </span>
         </div>
         
     )
@@ -107,4 +110,4 @@ const book2 =()=>{
 
 }
 
-export default book2;
+export default Book2;
