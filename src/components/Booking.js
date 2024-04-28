@@ -1,43 +1,26 @@
 import React, { useState } from 'react';
 import "../styles.css"
-import Logo from "../app_logo.png";
-//import Payment from "./Payment";
-// import { Dropdown, DropdownButton } from 'react-bootstrap';;
 import Book1 from './book1';
-import Book2 from './book2';
-import Book3 from './book3';
+
 
 
 
 
 
 const Booking=()=>{
-  const [currentPage, setCurrentPage] = useState(1);
+ 
 
-  const nextPage =()=>{
-    setCurrentPage(currentPage+1);
-  };
-  const showPage=()=>{
-    switch (currentPage) {
-      case 1:
-        return < Book1 nextPage ={Book2}/>
-      case 2:
-        return < Book2 nextPage ={nextPage}/>
-    case 3:
-          return < Book3/>
-
-      default:
-        break;
-    }
-  }
+  
   return(
-    <div className="">
-      {/* <img src={Logo} alt='logo' className='swLogo'/> */}
-      <h1> BOOK YOUR FLIGHT</h1>
-      {showPage()}
-      {/* <button className="getStarted"> <a href='/booking' >Get Started</a></button>  */}
+      <div className="">
 
-    </div>
+        <h1> BOOK YOUR FLIGHT</h1>
+        
+        <Book1/>
+  
+
+      </div>
+      
   )
 }
 

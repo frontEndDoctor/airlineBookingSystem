@@ -1,10 +1,10 @@
-import { React,useState } from 'react';
+import React,{useState} from 'react';
 import "../styles.css"
 //import Payment from "./Payment";
 import { Dropdown, DropdownButton } from 'react-bootstrap';;
 
 
-const book3 =()=>{
+const Book3 =()=>{
     const [formData, setFormData] = useState();
     const [selectedClass, setSelectedClass] = useState('');
       
@@ -72,4 +72,4 @@ const book3 =()=>{
 
 }
 
-export default book3;
+export default Book3;

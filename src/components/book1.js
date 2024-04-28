@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import "../styles.css"
-import Logo from "../app_logo.png";
-//import Payment from "./Payment";
-import { Dropdown, DropdownButton } from 'react-bootstrap';;
+import Book2 from './book2';
+
 
 
 const Book1 =()=>{
@@ -46,8 +45,10 @@ const Book1 =()=>{
                             <label className='inputLabel'>Email Address:</label>
                             <input  className='inputItem' type='email' placeholder='Enter your email address' required/>
                           </span>
+                          
                     </form>
-                    <button className="getStarted"> <a href='/book2' >Next</a></button> 
+                    <button type='submit' className="getStarted"> <a href='/book2'> Next</a></button> 
+                    
             </div>
     )
 }

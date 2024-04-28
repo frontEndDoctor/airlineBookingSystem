@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import "../styles.css"
-import Logo from "../app_logo.png";
-//import Payment from "./Payment";
-import { Dropdown, DropdownButton } from 'react-bootstrap';;
+
 
 
 const Book2 =()=>{
@@ -100,8 +98,8 @@ const Book2 =()=>{
                     </span>
                 </form>
                 <span>
-                <button className="getStarted"> <a href='/book1' >Previous</a></button>   
-                <button className="getStarted"> <a href='/book3' >Next</a></button> 
+                <button className="getStarted"> <a href=' /book1 ' >Previous</a></button>   
+                <button className="getStarted"> <a href=' /book3 ' >Next</a></button> 
                 </span>
         </div>
         
